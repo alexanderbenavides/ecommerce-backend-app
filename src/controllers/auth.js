@@ -34,7 +34,6 @@ function login(req, res) {
                 response: {
                 token: jwt.createAccessToken(userStorage),
                 refresh: jwt.createRefreshToken(userStorage)
-            
                 }
             });
         })

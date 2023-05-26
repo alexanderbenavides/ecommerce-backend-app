@@ -4,7 +4,7 @@
   "description": "api de prueba",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index"
+    "start": "nodemon src/index"
   },
   "keywords": [
     "backend",

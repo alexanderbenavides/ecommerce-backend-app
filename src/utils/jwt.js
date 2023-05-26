@@ -3,7 +3,7 @@ const { JWT_SECRET_KEY } = require('../config/config');
 
 function createAccessToken(user) {
     const expiration = new Date();
-    expiration.setDate(expiration.getHours() + 3);
+    expiration.setHours(expiration.getHours() + 5);
     return jwt.sign(getRefreshPayload(user, expiration), JWT_SECRET_KEY);
 }
 
